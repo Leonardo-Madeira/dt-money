@@ -17,8 +17,6 @@ export function Header({ onOpenNewTransactionModal }: HeaderProps){ //Conf o bot
                 <button type="button" onClick={onOpenNewTransactionModal}>
                     Nova transação
                 </button>
-
-                
             </Content>
         </Container>
     )
