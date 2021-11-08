@@ -4,7 +4,7 @@ export const Container = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr); // quantos elementos vao esta no grid no caso 3
     gap: 2rem; // espaçamento entre cada um do grid
-    margin-top: -10rem; // joga os elementos grid pra cima
+    margin-top: -7.5rem; // joga os elementos grid pra cima
 
     div{
         background: var(--shape);
