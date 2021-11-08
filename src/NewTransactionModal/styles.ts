@@ -65,7 +65,6 @@ const colors ={
 }
 export const RadioBox = styled.button<RadioBoxProps>` 
 
-button{
         height: 4rem;
         border: 1px solid #d7d7d7;
         border-radius: 0.25rem;
@@ -93,5 +92,5 @@ button{
             font-size: 1rem;
             color: var(--text-title);
         }
-    }
+    
 `
