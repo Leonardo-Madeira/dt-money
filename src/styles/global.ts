@@ -76,14 +76,16 @@ export const GlobalStyle = createGlobalStyle`
 
     }
     .react-modal-content{
-        width: 100%;
-        max-width: 576px;
-
-        background: #f0f2f5;
-        padding: 3rem;
         position: relative;
-
+    
+        width: 100%;    
+        max-width: 576px;
+    
+        padding: 3rem;
+    
         border-radius: 0.25rem;
+    
+        background: var(--background);
     }
 
     .react-modal-close{
@@ -92,6 +94,12 @@ export const GlobalStyle = createGlobalStyle`
         top: 1.5rem;
         border: 0;
         background: transparent;
+        transition: filter 0.2s;
+
+        border: 0;
+    
+        background: transparent;
+    
         transition: filter 0.2s;
 
         &:hover{
