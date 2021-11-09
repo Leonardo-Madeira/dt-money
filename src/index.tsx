@@ -14,10 +14,10 @@ createServer({
       transactions: [
         {
           id: 1,
-          title: 'Freelancer de Website',
+          title: 'Farmaceutica',
           type: 'deposit',
-          category: 'Dev',
-          amount: 6000,
+          category: 'Salário',
+          amount: 3700,
           createdAt: new Date('2021-02-12 09:00:00'),
         },
         {
@@ -25,7 +25,7 @@ createServer({
           title: 'Aluguel',
           type: 'withdraw',
           category: 'Apartamento',
-          amount: 1100,
+          amount: 1400,
           createdAt: new Date('2021-02-14 12:00:00'),
         },
       ],
