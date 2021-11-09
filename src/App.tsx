@@ -4,12 +4,13 @@ import { Header } from "./Header";
 import Modal from 'react-modal'
 import { GlobalStyle } from "./styles/global";
 import { NewTrasactionModal } from "./NewTransactionModal";
+import { TransactionsProvider } from "./hooks/useTransactions";
 
 Modal.setAppElement('#root');
 
 export function App() {
   const [isNewTransactionModalOpen, setIsNewTransactionModalOpen] = useState(false); //ele ja começa como false pq ainda nao foi clicado
-
+  
   function handleOpenNewTransactionModal(){ //onClick para quando o cliente clicar no botão, assim ele será true(verdadeiro)
       setIsNewTransactionModalOpen(true)
   }
@@ -18,7 +19,7 @@ export function App() {
       setIsNewTransactionModalOpen(false)
   }
   return (
-    <>
+    <TransactionsProvider>
       <Header onOpenNewTransactionModal={handleOpenNewTransactionModal} />
       <Dashboard />
       <NewTrasactionModal 
@@ -26,6 +27,6 @@ export function App() {
         onRequestClose={handleCloseNewTransactionModal}
       />
       <GlobalStyle />
-    </>
+    </TransactionsProvider>
   );
 }
