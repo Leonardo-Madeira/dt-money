@@ -27,13 +27,6 @@ table{
             color: var(--text-title);
         }
 
-        &.deposito{
-            color: var(--green);
-        }
-
-        &.retirada{
-            color: var(--red);
-        }
     }
 }
 
