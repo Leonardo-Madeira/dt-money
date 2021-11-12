@@ -14,11 +14,11 @@ createServer({
       transactions: [
         {
           id: 1,
-          title: 'Farmaceutica',
+          title: 'Desenvolvedor Web',
           type: 'deposit',
           category: 'Salário',
           amount: 3700,
-          createdAt: new Date('2021-02-12 09:00:00'),
+          createdAt: new Date('2021-11-07 09:00:00'),
         },
         {
           id: 2,
@@ -26,7 +26,7 @@ createServer({
           type: 'withdraw',
           category: 'Apartamento',
           amount: 1400,
-          createdAt: new Date('2021-02-14 12:00:00'),
+          createdAt: new Date('2021-11-08 12:00:00'),
         },
       ],
     })
