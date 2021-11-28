@@ -21,9 +21,7 @@ export const Content = styled.div`
         padding: 0 2rem;
         border-radius: 0.25rem;
         height: 3rem;
-
         transition: filter 0.2s; //atrase em 0.2s o efeito filter
-
         &:hover{
             filter: brightness(0.9); // escurece o botão
         }
