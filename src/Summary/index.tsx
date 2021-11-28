@@ -17,7 +17,6 @@ export function Summary(){
    //}, 0);                  //Eu poderia criar varias dessas para calcular e colocar em entrada, saida e total
 
    const summary = transactions.reduce((acc, transaction) => {
-
        if(transaction.type === 'deposit') {
 
            acc.deposits += transaction.amount;
@@ -26,17 +25,14 @@ export function Summary(){
            acc.withdraws += transaction.amount;
            acc.total = acc.total - transaction.amount;
        }
-
        return acc;
    }, {
        deposits: 0,
        withdraws: 0,
        total: 0,
    })
-
     return(
         <Container>
-            
             <div>
                 <header>
                     <p>Entradas</p>
@@ -54,7 +50,6 @@ export function Summary(){
                  <p>Saídas</p>
                     
                     <img src={imgSaida} alt="Saida" />
-                    
                 </header>
                 <strong>
                 -{ }{new Intl.NumberFormat('pt-BR', {
